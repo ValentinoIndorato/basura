@@ -1,0 +1,14 @@
+<!--Corregido peso tipografia-->
+1-El peso de la tipografía es muy fino y con el contraste de los colores de fondo se dificulta un poco la lectura. 
+<!--Corregido codigo comentado-->
+2-El codigo comentando recuerda sacarlo. Si puedes tener comentarios mas no código comentado. 
+<!--Corregido padding 0-->
+3-padding: 0 0 0 0;  Es lo mismo que colocar padding: 0; 
+<!--Corregido bootsrap-->
+4-Hay una clase de bootstrap que esta generando un espaciado en la navbar. La clase bg-body-tertiary probe de sacarla y agregarle al header el color de fondo y quedo. 
+<!--Corregido espaciados-->
+5-Falta mejorar los espaciados, que ente secciones no queden los elementos pegados a la seccion anterior o siguiente. 
+<!--Corregido mobile listo-->
+6-En la versión mobile, trata de que los elementos ocupen una columna cada uno. Asi queda todo mas aireado. 
+<!--Corregido H1 en todo-->
+7-Recuerda que como parte del SEO, es necesario que incluyas títulos h1 (uno por cada html) ya que es el titulo mas importante al momento de indexar la web en los buscadores

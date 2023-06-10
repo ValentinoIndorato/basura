@@ -1,0 +1,1681 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(253, 245, 2);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+/*-----VARIABLES----*/
+/*-----Navbar----*/
+.navbarp {
+  background-color: rgb(210, 105, 30);
+  /*31px*/
+  --mask: radial-gradient(36.15px at 50% calc(100% - 49.6px), #000 99%, #0000 101%) calc(50% - 62px) 0/124px 100%,
+      radial-gradient(36.15px at 50% calc(100% + 18.6px), #0000 99%, #000 101%) 50% calc(100% - 31px) / 124px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  padding: 0 0 3rem 0;
+}
+.navbarp .navbarp__div {
+  background-color: rgb(210, 105, 30);
+}
+.navbarp .navbarp__div .logo {
+  width: 20rem;
+  height: 20rem;
+}
+.navbarp .navbarp__div .navbarp__div__div .navbarp__div__div__ul .navbarp__div__div__ul__li .navbarp__div__div__ul__li--a {
+  text-decoration: none;
+  color: rgb(253, 245, 2);
+  font-size: 18px;
+}
+.navbarp .navbarp__div .navbarp__div__div .navbarp__div__div__ul .navbarp__div__div__ul__li .navbarp__div__div__ul__li--a:hover {
+  background-color: rgb(253, 245, 2);
+  color: rgb(210, 105, 30);
+}
+
+.letralogo {
+  font-size: 5rem;
+  color: rgb(253, 245, 2);
+  font-weight: 400;
+}
+
+/*-----_slider----*/
+.posicionSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 3rem 1rem 0 0;
+}
+.posicionSlider .slider {
+  width: 40vw;
+  height: auto;
+  overflow: hidden;
+}
+.posicionSlider .slider .slide-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  width: 2800px;
+}
+.posicionSlider .slider .slide-track .slide {
+  width: auto;
+  margin: 0 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.posicionSlider .slider .slide-track .slide img {
+  margin: 0 0.4rem 2rem 0;
+}
+.posicionSlider .slider .slide-track .slide p:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.posicionSlider .slider .slide-track .slide a {
+  color: black;
+  text-decoration: none;
+}
+.posicionSlider .slider .slide-track .slide a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+  }
+}
+/*-----_mainindex----*/
+.indexNuevo {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.indexNuevo .section__indexNuevo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; /*space-around mas separado. space-evenly mas junto*/
+  height: 25%;
+}
+.indexNuevo .section__indexNuevo .p__indexNuevo {
+  background-color: aliceblue;
+  border-radius: 45%;
+  padding: 0 2rem 5rem 2rem;
+  margin: 0;
+  height: 50%;
+  font-size: auto;
+  text-align: center;
+  /*10px*/
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+.indexNuevo .section__indexNuevo .p__indexNuevo:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+.indexNuevo .section__indexNuevo .p__indexNuevo a {
+  padding: 0;
+  font-size: clamp(1.8rem, 3.5vw, 2rem);
+  text-decoration: none;
+}
+.indexNuevo .section__indexNuevo .h1__g {
+  background-color: aqua;
+  padding: 0 1rem 0 1rem;
+  border-radius: 45% 45% 5% 5%;
+  --mask: radial-gradient(4px at 50% calc(100% - 4px), #000 99%, #0000 101%) calc(50% - 8px) 0/16px 100%,
+      radial-gradient(4px at 50% calc(100% + 0px), #0000 99%, #000 101%) 50% calc(100% - 4px) / 16px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+.indexNuevo .section__indexNuevo .h1__g a {
+  font-size: 50px;
+  text-decoration: none;
+}
+.indexNuevo .section__indexNuevo .h1__g:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+} /*-----mainpromociones----*/
+.h1Promociones {
+  margin: 5rem 0 0 1rem;
+  -webkit-animation: bounce-in-fwd 2s 0.5s both;
+  animation: bounce-in-fwd 2s 0.5s both;
+}
+
+@-webkit-keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+    transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-fwd {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(0.84);
+    transform: scale(0.84);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+.cardPromociones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0 9rem 0;
+  width: 100%;
+}
+.cardPromociones div {
+  width: 30rem;
+  height: 50%;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+  background-color: antiquewhite;
+  /*svg {fill: #1559cf;stroke: #00ff8c;&:hover{fill: #ff0000;} } el stroke si sirve*/
+  /*-----HOVER----*/
+}
+.cardPromociones div img {
+  width: 100%;
+}
+.cardPromociones div h2 {
+  color: rgb(210, 105, 30);
+  margin: 0.5rem 0 0 0;
+  display: inline;
+}
+.cardPromociones div p {
+  margin: 0;
+  display: inline;
+  font-size: 18px;
+}
+.cardPromociones div:hover {
+  border: 0.5rem solid rgb(210, 105, 30);
+}
+.cardPromociones div:hover p span {
+  border-radius: 50%;
+  display: inline;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+/*-----mainsabores----*/
+.h1Sabores {
+  margin: 2rem 0 3rem 1rem;
+  -webkit-animation: heartbeat 1.5s 3s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+.sabores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sabores section {
+  width: 16rem;
+  height: 17rem;
+  background-color: rgb(210, 105, 30);
+  margin: 5% 1% 10% 1%;
+  padding: 1%;
+  /*11px*/
+  --mask: radial-gradient(12.83px at 50% calc(100% - 17.6px), #000 99%, #0000 101%) calc(50% - 22px) 0/44px
+                  100%,
+          radial-gradient(12.83px at 50% calc(100% + 6.6px), #0000 99%, #000 101%) 50% calc(100% - 11px) /
+                  44px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 100px 100% 10% 10%/40% 700px 50% 10%;
+  /*UL SABORES-------*/
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /*----Hover----*/
+}
+.sabores section .ul--sabores {
+  font-weight: 700;
+  padding: 0 0 1rem 0;
+}
+.sabores section .ul--sabores li:hover {
+  color: rgb(253, 245, 2);
+}
+.sabores section:hover h2 {
+  color: rgb(253, 245, 2);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.h1Ycarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+.h1Ycarousel .tamanio {
+  margin: 0;
+  width: 25%;
+  height: auto;
+}
+
+/*-----mainproductos----*/
+.h1Productos {
+  margin: 0 0 0 0.5rem;
+  -webkit-animation: bounce-top 2s 0.5s both;
+  animation: bounce-top 2s 0.5s both;
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+ol,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+/*PARA ELEGIR---------------------------------*/
+.paraelegir {
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.paraelegir h2 {
+  font-size: 40px;
+}
+.paraelegir .ul__paralegir {
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  /*que es esto? grid-auto-columns: 1fr;*/
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas: "bochagrid dosbochasgrid tresbochasgrid" "barquillogrid ... pinitogrid" "cuartokgrid mediokgrid kgrid" "bañochoco bañochoco bañochoco";
+}
+.paraelegir .ul__paralegir li img {
+  width: 25%;
+}
+.paraelegir .ul__paralegir li p {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.paraelegir:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*GRID AREA---------------------------------*/
+.bochagrid {
+  grid-area: bochagrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bochagrid div {
+  margin: 1rem;
+}
+.bochagrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.bochagrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.dosbochasgrid {
+  grid-area: dosbochasgrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dosbochasgrid div {
+  margin: 1rem;
+}
+.dosbochasgrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.dosbochasgrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.tresbochasgrid {
+  grid-area: tresbochasgrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tresbochasgrid div {
+  margin: 1rem;
+}
+.tresbochasgrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.tresbochasgrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.barquillogrid {
+  grid-area: barquillogrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.barquillogrid div {
+  width: 15%;
+  text-align: left;
+  margin: 1rem;
+}
+.barquillogrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.barquillogrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.pinitogrid {
+  grid-area: pinitogrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.pinitogrid div {
+  width: 10%;
+  text-align: left;
+  margin: 1rem 1rem 1rem 2.5rem;
+}
+.pinitogrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.pinitogrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.cuartokgrid {
+  grid-area: cuartokgrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cuartokgrid div {
+  margin: 1rem;
+}
+.cuartokgrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.cuartokgrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.mediokgrid {
+  grid-area: mediokgrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mediokgrid div {
+  margin: 1rem;
+}
+.mediokgrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.mediokgrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+.kgrid {
+  grid-area: kgrid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kgrid div {
+  margin: 1rem;
+}
+.kgrid div .precio-hover:hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+.kgrid:hover div .precio-hover {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+/*BAÑO CHOCOLATE---------------------------------*/
+.bañochoco {
+  grid-area: bañochoco;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(254, 255, 240);
+  border: 0.1rem solid black;
+  width: auto;
+  margin: 1rem;
+}
+.bañochoco .bañochoco_p {
+  padding: 0;
+}
+
+/*POSTRES---------------------------------*/
+.postres {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.postres h2 {
+  font-size: 40px;
+}
+.postres .ul__postres {
+  background-color: rgb(210, 105, 30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+}
+.postres .ul__postres .li__postres {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(210, 105, 30);
+  margin: 0 1% 0 1%;
+}
+.postres .ul__postres .li__postres .div-precios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.postres .ul__postres .li__postres .div-precios p {
+  width: auto;
+  margin: 0 0 2.2rem 0;
+}
+.postres .ul__postres .li__postres .div-precios .p__preciounidad {
+  margin: 0 0.5rem 2.2rem 0;
+}
+.postres:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*CARTELES UNIDADES---------------------------------*/
+.unidad {
+  position: absolute;
+  top: auto;
+  right: 72px;
+  background-color: aliceblue;
+  margin: 6rem 0 0 0;
+}
+
+.seisunidades {
+  position: absolute;
+  top: auto;
+  right: 5px;
+  background-color: aliceblue;
+  line-height: 1.2;
+  margin: 4.9rem 0 1rem 0;
+}
+
+/*FAMILIARES---------------------------------*/
+.familiares {
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.familiares h2 {
+  font-size: 40px;
+}
+.familiares .ul__familiares {
+  background-color: rgb(210, 105, 30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  /*15px*/
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+}
+.familiares .ul__familiares .li__familiares {
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1% 0 1%;
+}
+.familiares .ul__familiares .li__familiares p {
+  width: auto;
+}
+.familiares .ul__familiares .li__familiares .precio-hover {
+  margin: 0 0 3.7rem 0;
+  padding: 0 0 0.5rem 0;
+}
+.familiares:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*TORTAS---------------------------------*/
+.tortas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.tortas h2 {
+  font-size: 40px;
+}
+.tortas .ul__tortas {
+  background-color: rgb(210, 105, 30);
+  margin: 1rem;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+}
+.tortas .ul__tortas .li__tortas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1% 0 1%;
+}
+.tortas .ul__tortas .li__tortas p {
+  width: auto;
+}
+.tortas .ul__tortas .li__tortas .precio-hover {
+  margin: 0 0 3.7rem 0;
+  padding: 0 0 0.5rem 0;
+}
+.tortas:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*ANTOJOS---------------------------------*/
+.antojos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.antojos h2 {
+  font-size: 40px;
+}
+.antojos .ul__antojos {
+  background-color: rgb(210, 105, 30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+}
+.antojos .ul__antojos .li__antojos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1% 0 1%;
+}
+.antojos .ul__antojos .li__antojos p {
+  width: auto;
+}
+.antojos .ul__antojos .li__antojos .p__preciounidad {
+  margin: 0 0.5rem 0 0;
+}
+.antojos .ul__antojos .li__antojos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.antojos .ul__antojos .li__antojos .precio-hover {
+  margin: 0 0 2rem 0;
+  padding: 0 0 0.5rem 0;
+}
+.antojos:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*CARTELES UNIDADES---------------------------------*/
+.unidadantojo {
+  position: absolute;
+  top: auto;
+  right: 72px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(46%, rgb(240, 248, 255)), to(rgba(240, 248, 255, 0.0005252101)));
+  background: linear-gradient(0deg, rgb(240, 248, 255) 46%, rgba(240, 248, 255, 0.0005252101) 100%);
+  padding: 0.5rem 0 0.51rem 0;
+  margin: 5.3rem 0 0 0;
+}
+
+.unidadesantojo {
+  position: absolute;
+  top: auto;
+  right: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, rgb(240, 248, 255)), color-stop(93%, rgba(240, 248, 255, 0.7260154062)));
+  background: linear-gradient(0deg, rgb(240, 248, 255) 5%, rgba(240, 248, 255, 0.7260154062) 93%);
+  line-height: 1.2;
+  margin: 5.3rem 0 0 0;
+}
+
+/*COPAS---------------------------------*/
+.copas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5rem 0 7rem 0;
+}
+.copas h2 {
+  font-size: 40px;
+}
+.copas .ul__copas {
+  background-color: rgb(210, 105, 30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem;
+  text-align: left;
+  padding: 0 0 1rem 0;
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+      radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+}
+.copas .ul__copas .li__copas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.copas .ul__copas .li__copas p {
+  width: auto;
+}
+.copas .ul__copas .li__copas .precio-hover {
+  margin: 0 0 1rem 0;
+  padding: 0 0 0.5rem 0;
+}
+.copas:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*-----maincafeteria----*/
+.h1Cafeteria {
+  margin: 0 0 0 1rem;
+  -webkit-animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 0.8s both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.caferiaCuerpo {
+  margin: 4% 0 9rem 0;
+}
+.caferiaCuerpo .cafeteria {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 0 6rem 0;
+}
+.caferiaCuerpo .cafeteria h2 {
+  font-size: 40px;
+}
+.caferiaCuerpo .cafeteria .ul--cafeteria {
+  background-color: rgb(210, 105, 30);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  /*15 px*/
+  --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+    radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+      repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 0 2rem 0;
+  margin: 1rem;
+}
+.caferiaCuerpo .cafeteria .ul--cafeteria .li--cafeteria {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.caferiaCuerpo .cafeteria .ul--cafeteria p {
+  width: auto;
+}
+.caferiaCuerpo .cafeteria:hover h2 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.texto-hover:hover {
+  color: rgb(253, 245, 2);
+}
+.texto-hover:hover span {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+.texto-hover:hover div p {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(253, 245, 2);
+}
+.texto-hover:hover .precio-hover {
+  margin: 0 0 2.2rem 0;
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(253, 245, 2);
+}
+.texto-hover:hover .li--precio {
+  border-radius: 50%;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(253, 245, 2);
+}
+
+/*-----_maindelivery----*/
+.DeliveryMain {
+  padding: auto;
+  margin: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgb(210, 105, 30);
+  --mask: radial-gradient(36.15px at 50% calc(100% - 49.6px), #000 99%, #0000 101%) calc(50% - 62px) 0/124px 100%,
+      radial-gradient(36.15px at 50% calc(100% + 18.6px), #0000 99%, #000 101%) 50% calc(100% - 31px) / 124px 100%
+          repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  padding: 0 0 3rem 0;
+  border-radius: 100px 100px 0 0;
+}
+.DeliveryMain h1 {
+  font-size: 50px;
+  color: rgb(253, 245, 2);
+  padding: 2rem 0 0 0;
+}
+.DeliveryMain .deliverySection {
+  background-color: rgb(210, 105, 30);
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionpedidosya .a-pedidosya {
+  width: 50%;
+}
+.sectionpedidosya .a-pedidosya .imgpedidosya {
+  width: 100%;
+  padding: 0;
+  margin: auto;
+}
+
+/*-----_footer----*/
+footer {
+  background-color: rgb(210, 105, 30);
+  padding: 0rem 0.5rem;
+  font-size: 18px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0 0 0;
+  --mask: radial-gradient(36.15px at 50% 49.6px, #000 99%, #0000 101%) calc(50% - 62px) 0/124px 100%,
+      radial-gradient(36.15px at 50% -18.6px, #0000 99%, #000 101%) 50% 31px/124px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+footer .divInformacion {
+  margin: 0 0 0 0.5rem;
+}
+footer .divInformacion h3 {
+  color: rgb(253, 245, 2);
+  margin: 0;
+  text-decoration: none;
+}
+footer .divInformacion a {
+  text-decoration: none;
+  color: rgb(253, 245, 2);
+}
+footer .divDirecciones {
+  margin: 0 0.5rem 0 0;
+  text-align: right;
+}
+footer .divDirecciones h3 {
+  margin: 0;
+}
+footer .divDirecciones h3 a {
+  text-decoration: none;
+  color: rgb(253, 245, 2);
+}
+footer .divDirecciones ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+}
+footer .divDirecciones ul li a {
+  text-decoration: none;
+  color: rgb(253, 245, 2);
+}
+footer .divDirecciones ul .locales {
+  text-align: left;
+  list-style: url(../assets/img/barquillo_listStyle.svg);
+}
+footer .divDirecciones ul .locales:hover {
+  color: rgb(253, 245, 2);
+  text-align: left;
+  list-style: url(../assets/img/barquilloHover_listStyle.svg);
+}
+
+/*-----_404----*/
+.main404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main404 .h1404 .volver404 {
+  text-decoration: none;
+  font-size: 5rem;
+  color: rgb(210, 105, 30);
+}
+.main404 .la {
+  width: 85%;
+}
+
+/*-----_responsive----*/
+/*-----max 426----*/
+@media screen and (max-width: 426px) {
+  body {
+    background-color: rgb(255, 251, 130);
+  }
+  body .indexNuevo .section__indexNuevo .p__indexNuevo {
+    padding: 1rem 0 1rem 0;
+  }
+  body .indexNuevo .section__indexNuevo .p__indexNuevo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  body .indexNuevo .section__indexNuevo .p__indexNuevo a {
+    padding: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .cardSabores section {
+    height: 15rem;
+    margin: 5rem 1rem 0rem 1rem;
+  }
+  body .cardSabores section div p {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  body .productos3 .productos3__div p {
+    margin: 0 0 0.3rem 0;
+  }
+  body .productos3 .productos3__div .productos3__div__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .productos3 .productos3__div .productos3__div__card .productos3__div__card_p_over {
+    margin: auto;
+    padding: 0rem;
+  }
+  body .productos3 .productos3__div .productos3__div__card .productos3__div__card_p {
+    width: 1rem;
+    margin: 0 0 0.1rem 0;
+    padding: 0.1rem;
+  }
+  body .productos3 .productos3__div .productos3__div__card h3 {
+    width: auto;
+    margin: auto;
+    padding: 1rem;
+  }
+  body .cafeteriaArticle {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .cafeteriaArticle .cafeteria1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    width: 30rem;
+  }
+  body .cafeteriaArticle .cafeteria1 ul {
+    padding: 1rem;
+    width: auto;
+  }
+  body .DeliveryMain h2 {
+    text-align: center;
+  }
+  body .DeliveryMain .deliverySection {
+    margin: 0;
+  }
+}
+/*-----min 445----*/
+@media screen and (max-width: 445px) {
+  .indexNuevo .section__indexNuevo .p__indexNuevo {
+    padding: 1rem;
+  }
+  .indexNuevo .section__indexNuevo .p__indexNuevo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .indexNuevo .section__indexNuevo .p__indexNuevo a {
+    padding: 0.5rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+/*-----min 992----*/
+@media screen and (min-width: 992px) {
+  body {
+    background-color: rgb(253, 228, 2);
+  }
+}
+/*-----max 991 ----*/
+@media screen and (max-width: 991px) {
+  body .cardSabores section {
+    height: 15rem;
+    margin: 5rem 1rem 0rem 1rem;
+  }
+  body .cardSabores section div p {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  body .productosGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .productosGeneral .producto1 {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+  body .productosGeneral .producto1 div {
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+  body .productosGeneral .producto1 div .cardProducto1 {
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+  body .productosGeneral .productos2 .productos2__div .productos2__div__card {
+    width: 15rem;
+    padding: 2rem;
+    margin: 0.5rem;
+  }
+  body .productosGeneral .productos2 .productos2__div .productos2__div__card .productos2__div__card__div {
+    width: 8rem;
+    margin: auto;
+  }
+  body .productosGeneral .productos2 .productos2__div .productos2__div__card .productos2__div__card__div p {
+    padding: 0;
+    margin: 0rem 1rem 0rem 0rem;
+    height: 5rem;
+    font-size: 18px;
+    text-align: center;
+  }
+  body .productosGeneral .productos2 .productos2__div .productos2__div__card .productos2__div__card__div .productos2__div__card__div__h3 {
+    margin: auto;
+    padding: 0rem;
+    width: 4.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 18px;
+  }
+  body .productosGeneral .productos2 .productos2__div .productos2__div__card h3 {
+    width: auto;
+    padding: 0;
+    margin: auto;
+  }
+  body .productosGeneral .productos3 .productos3__div .productos3__div__card .productos3__div__card_p_over {
+    margin: 0.5rem;
+  }
+  body .productosGeneral .productos3 .productos3__div .productos3__div__card .productos3__div__card_p {
+    margin: 0 0 0.5rem 0;
+  }
+  body .productosGeneral .productos3 .productos3__div .productos3__div__card h3 {
+    margin: 0.5rem;
+  }
+  body .cafeteriaArticle {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .cafeteriaArticle .cafeteria1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 1rem;
+    width: 30rem;
+  }
+  body .cafeteriaArticle .cafeteria1 ul {
+    margin: 2rem;
+  }
+}

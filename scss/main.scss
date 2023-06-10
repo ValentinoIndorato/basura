@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(253, 245, 2);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 100%;
+}
+/*-----VARIABLES----*/
+@import "_variables.scss";
+/*-----Navbar----*/
+.navbarp {
+    background-color: rgb(210, 105, 30);
+    /*31px*/
+    --mask: radial-gradient(36.15px at 50% calc(100% - 49.6px), #000 99%, #0000 101%) calc(50% - 62px) 0/124px 100%,
+        radial-gradient(36.15px at 50% calc(100% + 18.6px), #0000 99%, #000 101%) 50% calc(100% - 31px) / 124px 100%
+            repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    padding: 0 0 3rem 0;
+
+    .navbarp__div {
+        background-color: rgb(210, 105, 30);
+
+        .logo {
+            width: 20rem;
+            height: 20rem;
+        }
+        .navbarp__div__div {
+            .navbarp__div__div__ul {
+                .navbarp__div__div__ul__li {
+                    .navbarp__div__div__ul__li--a {
+                        text-decoration: none;
+                        color: rgb(253, 245, 2);
+                        font-size: 18px;
+
+                        &:hover {
+                            background-color: rgb(253, 245, 2);
+                            color: rgb(210, 105, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.letralogo {
+    font-size: 5rem;
+    color: rgb(253, 245, 2);
+    font-weight: 400;
+}
+/*-----_slider----*/
+@import "_slider.scss";
+/*-----_mainindex----*/
+@import "_mainindex.scss";
+/*-----mainpromociones----*/
+@import "_mainpromociones.scss";
+/*-----mainsabores----*/
+@import "_mainsabores.scss";
+/*-----mainproductos----*/
+@import "_mainproductos.scss";
+/*-----maincafeteria----*/
+@import "_maincafeteria.scss";
+/*-----_maindelivery----*/
+@import "_maindelivery.scss";
+/*-----_footer----*/
+@import "_footer.scss";
+/*-----_404----*/
+@import "_404.scss";
+/*-----_responsive----*/
+@import "_responsive.scss";

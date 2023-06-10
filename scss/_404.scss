@@ -1,0 +1,15 @@
+.main404 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .h1404 {
+        .volver404 {
+            text-decoration: none;
+            font-size: 5rem;
+            color: $color-marron;
+        }
+    }
+    .la {
+        width: 85%;
+    }
+}

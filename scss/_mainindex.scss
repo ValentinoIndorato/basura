@@ -1,0 +1,58 @@
+.indexNuevo {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    .section__indexNuevo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; /*space-around mas separado. space-evenly mas junto*/
+        height: 25%;
+        .p__indexNuevo {
+            background-color: aliceblue;
+
+            border-radius: 45%;
+            padding: 0 2rem 5rem 2rem;
+            margin: 0;
+
+            height: 50%;
+            font-size: auto;
+            text-align: center;
+            
+            /*10px*/
+            --mask: radial-gradient(17.49px at 50% calc(100% - 24px), #000 99%, #0000 101%) calc(50% - 30px) 0/60px 100%,
+                radial-gradient(17.49px at 50% calc(100% + 9px), #0000 99%, #000 101%) 50% calc(100% - 15px) / 60px 100%
+                    repeat-x;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+            &:hover {
+                transform: scale(2);
+            }
+
+            a {
+                padding: 0;
+                font-size: clamp(1.8rem, 3.5vw, 2rem);
+                text-decoration: none;
+            }
+        }
+        .h1__g {
+            background-color: aqua;
+            padding: 0 1rem 0 1rem;
+            border-radius: 45% 45% 5% 5%;
+            --mask: radial-gradient(4px at 50% calc(100% - 4px), #000 99%, #0000 101%) calc(50% - 8px) 0/16px 100%,
+                radial-gradient(4px at 50% calc(100% + 0px), #0000 99%, #000 101%) 50% calc(100% - 4px) / 16px 100%
+                    repeat-x;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+
+            a {
+                font-size: 50px;
+                text-decoration: none;
+            }
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.posicionSlider {
+    display: flex;
+    justify-content: end;
+    margin: 3rem 1rem 0 0;
+
+    .slider {
+        width: 40vw;
+        height: auto;
+        overflow: hidden;
+
+        .slide-track {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: calc(200px * 14);
+
+            .slide {
+                width: auto;
+                margin: 0 0.5rem 0 0.5rem;
+                display: flex;
+                img {
+                    margin: 0 0.4rem 2rem 0;
+                }
+                p:hover {
+                    text-decoration: underline;
+                    text-decoration-style: wavy;
+                }
+                a {
+                    color: black;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-style: wavy;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
+}

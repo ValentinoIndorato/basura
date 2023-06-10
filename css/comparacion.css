@@ -1,0 +1,38 @@
+.antojos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.antojos .ul__antojos {
+  background-color: rgb(210, 105, 30);
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem;
+}
+.antojos .ul__antojos .li__antojos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
+.antojos .ul__antojos .li__antojos p {
+  width: auto;
+}
+.antojos .ul__antojos .li__antojos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

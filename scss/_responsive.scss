@@ -1,0 +1,207 @@
+/*-----max 426----*/
+@media screen and (max-width: 426px) {
+    body {
+        background-color: rgb(255, 251, 130);
+
+        .indexNuevo {
+            .section__indexNuevo {
+                .p__indexNuevo {
+                    padding: 1rem 0 1rem 0;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    a {
+                        padding: 0;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+        .cardSabores {
+            section {
+                height: 15rem;
+                margin: 5rem 1rem 0rem 1rem;
+                div {
+                    p {
+                        margin: 0.5rem 0 0.5rem 0;
+                    }
+                }
+            }
+        }
+        .productos3 {
+            .productos3__div {
+                p {
+                    margin: 0 0 0.3rem 0;
+                }
+                .productos3__div__card {
+                    flex-direction: column;
+                    .productos3__div__card_p_over {
+                        margin: auto;
+                        padding: 0rem;
+                    }
+                    .productos3__div__card_p {
+                        width: 1rem;
+                        margin: 0 0 0.1rem 0;
+                        padding: 0.1rem;
+                    }
+                    h3 {
+                        width: auto;
+                        margin: auto;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        .cafeteriaArticle {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cafeteria1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 1rem;
+                width: 30rem;
+
+                ul {
+                    padding: 1rem;
+                    width: auto;
+                }
+            }
+        }
+        .DeliveryMain {
+            h2 {
+                text-align: center;
+            }
+            .deliverySection {
+                margin: 0;
+            }
+        }
+    }
+}
+/*-----min 445----*/
+@media screen and (max-width: 445px) {
+    .indexNuevo {
+        .section__indexNuevo {
+            .p__indexNuevo {
+                padding: 1rem;
+                &:hover {
+                    transform: scale(1.2);
+                }
+                a {
+                    padding: 0.5rem;
+                    justify-content: space-evenly;
+                }
+            }
+
+        }
+    }
+}
+/*-----min 992----*/
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(253, 228, 2);
+    }
+}
+
+/*-----max 991 ----*/
+@media screen and (max-width: 991px) {
+    body {
+        .cardSabores {
+            section {
+                height: 15rem;
+                margin: 5rem 1rem 0rem 1rem;
+                div {
+                    p {
+                        margin: 0.5rem 0 0.5rem 0;
+                    }
+                }
+            }
+        }
+        .productosGeneral {
+            display: flex;
+            flex-wrap: wrap;
+            .producto1 {
+                width: 100%;
+                padding: 0;
+                margin: auto;
+                div {
+                    background-color: black;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 0 0 0;
+                    .cardProducto1 {
+                        padding: 0;
+                        margin: 0 0 0 0;
+                    }
+                }
+            }
+            .productos2 {
+                .productos2__div {
+                    .productos2__div__card {
+                        width: 15rem;
+                        padding: 2rem;
+                        margin: 0.5rem;
+                        .productos2__div__card__div {
+                            width: 8rem;
+                            margin: auto;
+
+                            p {
+                                padding: 0;
+                                margin: 0rem 1rem 0rem 0rem;
+                                height: 5rem;
+                                font-size: 18px;
+                                text-align: center;
+                            }
+                            .productos2__div__card__div__h3 {
+                                margin: auto;
+                                padding: 0rem;
+                                width: 4.5rem;
+                                height: 2.5rem;
+                                text-align: center;
+                                font-size: 18px;
+                            }
+                        }
+                        h3 {
+                            width: auto;
+                            padding: 0 ;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .productos3 {
+                .productos3__div {
+                    .productos3__div__card {
+                        .productos3__div__card_p_over {
+                            margin: 0.5rem;
+                        }
+                        .productos3__div__card_p {
+                            margin: 0 0 0.5rem 0;
+                        }
+                        h3 {
+                            margin: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cafeteriaArticle {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cafeteria1 {
+                display: flex;
+                flex-wrap: wrap;
+
+                margin: 1rem;
+                width: 30rem;
+                ul {
+                    margin: 2rem;
+                }
+            }
+        }
+    }
+}
